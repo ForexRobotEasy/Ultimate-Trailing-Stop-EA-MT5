@@ -1,0 +1,96 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                              Ultimate Trailing Stop EA MT5 |
+//|                                                          forexroboteasy.com |
+//|                                                        Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+#property copyright 'forexroboteasy.com'
+#property link      'forexroboteasy.com'
+#property version   '1.00'
+#property strict
+
+//+------------------------------------------------------------------+
+//| Global variables                                                  |
+//+------------------------------------------------------------------+
+input int       StopLoss              = 50;                    // Stop loss value in pips
+input int       TakeProfit            = 100;                   // Take profit value in pips
+input int       BreakevenTrigger      = 50;                    // Breakeven trigger in pips
+input int       PartialTakeProfit1    = 30;                    // Partial take profit level 1 in pips
+input int       PartialTakeProfit2    = 60;                    // Partial take profit level 2 in pips
+input int       PartialTakeProfit3    = 90;                    // Partial take profit level 3 in pips
+input double    PartialClosePercent   = 50;                    // Partial close percentage
+input bool      TrailingStopReal      = true;                  // Use real trailing stop or virtual trailing stop
+input int       TrailingStopMethod    = 0;                     // Trailing stop method (0 - fixed, 1 - percent, 2 - ATR Exit, etc.)
+input bool      FullExitOnTouch       = true;                  // Exit fully when the trailing stop is touched
+input bool      PartialCloseOnTouch   = true;                  // Partially close on touch
+input bool      FullExitOnBarClose    = false;                 // Exit fully when the bar closes
+input bool      PartialCloseOnBarClose= false;                 // Partially close when the bar closes
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add necessary initialization code here
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Add necessary deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                              |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Add necessary tick processing code here
+
+    // Check for open orders
+
+    // Apply trailing stop methods
+
+    // Check for stop loss, take profit, and breakeven levels
+
+    // Partially close positions if necessary
+
+    // Fully exit positions if necessary
+}
+
+//+------------------------------------------------------------------+
+//| Helper functions                                                  |
+//+------------------------------------------------------------------+
+void ApplyTrailingStop()
+{
+    // Apply the chosen trailing stop method
+}
+
+void CheckStopLoss()
+{
+    // Check if the stop loss level has been reached
+}
+
+void CheckTakeProfit()
+{
+    // Check if the take profit level has been reached
+}
+
+void CheckBreakeven()
+{
+    // Check if the breakeven trigger has been reached
+}
+
+void PartiallyClosePosition()
+{
+    // Partially close the position based on the chosen percentage
+}
+
+void FullyExitPosition()
+{
+    // Fully exit the position
+}
